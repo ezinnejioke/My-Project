@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'spartan', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    color: black;
+}
+
+h2 {
+    font-size: 46px;
+    color: blueviolet;
+}
+
+h4 {
+    font-size: 20px;
+    color: black;
+}
+
+h6 {
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+
+body {
+    width: 100%;
+}
+
+/************Header**************/
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: white;
+    z-index: 9;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items:right;
+    justify-content:right;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 10px 18px;
+    position: relative;
+}
+
+#navbar li a,
+#navbar li a.active {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: 1s ease;
+    text-decoration: none;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: blueviolet;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: " ";
+    width: 40px;
+    height: 1px;
+    background-color: blueviolet;
+    position: absolute;
+    bottom: -1px;
+    left: 20px;
+}
+
+/************Home Page**************/
+
+#hero {
+    background-image: url(Image/BG\ 5.jpg);
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    padding: 0 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#hero h2 {
+    color: blueviolet;
+}
+
+#hero button {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 30px 10px 30px;
+}
+
+#hero button:hover {
+    background-color: rgb(64, 16, 109);
+    color: white;
+}
+
+/********** About Me **********/
+#about {
+    text-align: center;
+    padding: 40px;
+    background-repeat: no-repeat;
+    height: 40vh;
+    margin-top: 40px;
+}
+
+#about h2 {
+    font-size: 48px;
+    color: #1a1a1a;
+}
+
+#about p {
+    color: #1a1a1a;
+}
+
+/********* Project ************/
+#project {
+    text-align: center;
+    padding: 60px;
+}
+
+#project h2 {
+    text-align: center;
+    color: #1a1a1a;
+}
+
+#project h3 {
+    text-align: left;
+    color: blueviolet
+}
+
+#project .pro-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#project .pro {
+    width: 30%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #dfd9d9;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 25px 25px 35px rgba(0, 0, 0, 0.3);
+    margin: 17px 12px;
+    position: relative;
+    transition: 0.2s ease;
+}
+
+#project .pro img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+#project .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#project .pro .des h5 {
+    color: #1a1a1a;
+    font-size: 14px;
+    padding: 7px;
+}
+
+#project button {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 6px;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 30px 10px 30px;
+}
+
+#project button:hover {
+    background-color: rgb(64, 16, 109);
+    color: white;
+}
+
+/************ Contact ***************/
+#contact {
+    text-align: center;
+    padding: 60px;
+}
+
+#contact h2 {
+    color: #1a1a1a;
+}
